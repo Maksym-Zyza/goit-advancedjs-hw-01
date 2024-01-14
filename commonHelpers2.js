@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-ec808ebb.js";/* empty css                      */import{l as a}from"./assets/vendor-f8ab8876.js";const c=document.querySelector("iframe"),t=new Vimeo.Player(c),o="videoplayer-current-time",l=1e3,n=()=>{t.getCurrentTime().then(e=>{localStorage.setItem(o,e)}).catch(e=>{console.error(e)})},s=a(n,l);t.on("timeupdate",()=>{s()});const m=()=>{const e=localStorage.getItem(o)??0;t.setCurrentTime(e).then(()=>{}).catch(r=>{console.error("Error playback:",r)})};m();
+//# sourceMappingURL=commonHelpers2.js.map
