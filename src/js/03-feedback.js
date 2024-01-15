@@ -32,6 +32,7 @@ function handlerMessage(evt) {
 
 function handlerSubmit(evt) {
   evt.preventDefault();
+  if (!data.email || !data.message) return;
   console.log(data);
   resetForm(evt);
 }
